@@ -1,0 +1,1048 @@
+[
+  {
+    "title": "Decide Java and Framework Versions",
+    "body": "## Description\nSelect and document the exact versions for Java, UI framework, JPA provider, and PostgreSQL driver.\n\n## Acceptance Criteria\n- [ ] Chosen versions are listed in project docs\n- [ ] Local build runs with selected versions\n- [ ] Rationale for versions is captured briefly",
+    "labels": [
+      "architecture",
+      "documentation",
+      "setup"
+    ],
+    "milestone": "Milestone 0: Foundations and Tooling",
+    "inserted": true
+  },
+  {
+    "title": "Establish Layered Package Structure",
+    "body": "## Description\nCreate a clear package layout for UI, Application, Domain, and Persistence layers.\n\n## Acceptance Criteria\n- [ ] Project contains four primary layer packages\n- [ ] Example classes placed to demonstrate boundaries\n- [ ] Layout documented for contributors",
+    "labels": [
+      "architecture",
+      "setup",
+      "documentation"
+    ],
+    "milestone": "Milestone 0: Foundations and Tooling",
+    "inserted": true
+  },
+  {
+    "title": "Initialize Build Configuration",
+    "body": "## Description\nAdd build tool configuration with compile, test, and packaging tasks.\n\n## Acceptance Criteria\n- [ ] Build command compiles and packages the app\n- [ ] Test task executes unit tests\n- [ ] Build fails on test errors",
+    "labels": [
+      "devops",
+      "setup",
+      "quality"
+    ],
+    "milestone": "Milestone 0: Foundations and Tooling",
+    "inserted": true
+  },
+  {
+    "title": "Add Basic README with Run Instructions",
+    "body": "## Description\nProvide initial README explaining how to build and run the app locally.\n\n## Acceptance Criteria\n- [ ] README includes prerequisites and commands\n- [ ] Troubleshooting section for common issues\n- [ ] Links to further docs included",
+    "labels": [
+      "documentation",
+      "setup",
+      "usability"
+    ],
+    "milestone": "Milestone 0: Foundations and Tooling",
+    "inserted": true
+  },
+  {
+    "title": "Create Health View for App Boot",
+    "body": "## Description\nAdd a minimal health/status view to confirm successful application boot.\n\n## Acceptance Criteria\n- [ ] Health view reachable at a known path\n- [ ] View indicates OK when app is healthy\n- [ ] Behavior documented",
+    "labels": [
+      "ui",
+      "observability",
+      "setup"
+    ],
+    "milestone": "Milestone 0: Foundations and Tooling",
+    "inserted": true
+  },
+  {
+    "title": "Set Up CI: Build on Pull Requests",
+    "body": "## Description\nConfigure CI to build the project for every pull request.\n\n## Acceptance Criteria\n- [ ] CI runs on PR open and update\n- [ ] Build status visible in PR checks\n- [ ] Failures block merges",
+    "labels": [
+      "devops",
+      "ci",
+      "quality"
+    ],
+    "milestone": "Milestone 0: Foundations and Tooling",
+    "inserted": true
+  },
+  {
+    "title": "Set Up CI: Run Unit Tests",
+    "body": "## Description\nEnsure CI executes unit tests headlessly.\n\n## Acceptance Criteria\n- [ ] Unit tests run automatically in CI\n- [ ] Test reports are accessible\n- [ ] CI fails when tests fail",
+    "labels": [
+      "devops",
+      "ci",
+      "testing"
+    ],
+    "milestone": "Milestone 0: Foundations and Tooling",
+    "inserted": true
+  },
+  {
+    "title": "Add Static Analysis in CI",
+    "body": "## Description\nIntegrate a static analysis step in CI to detect code issues.\n\n## Acceptance Criteria\n- [ ] Static analysis runs on PRs and main\n- [ ] Thresholds cause CI failure on issues\n- [ ] How to run locally documented",
+    "labels": [
+      "devops",
+      "ci",
+      "quality"
+    ],
+    "milestone": "Milestone 0: Foundations and Tooling",
+    "inserted": true
+  },
+  {
+    "title": "Add Code Formatting Check in CI",
+    "body": "## Description\nEnforce code formatting via CI to ensure consistent style.\n\n## Acceptance Criteria\n- [ ] Formatting check runs in CI\n- [ ] Non-conforming code fails the build\n- [ ] Developer instructions provided",
+    "labels": [
+      "devops",
+      "ci",
+      "quality"
+    ],
+    "milestone": "Milestone 0: Foundations and Tooling",
+    "inserted": true
+  },
+  {
+    "title": "Local PostgreSQL Configuration",
+    "body": "## Description\nProvide local database connection configuration through environment variables.\n\n## Acceptance Criteria\n- [ ] App reads DB URL, user, password from env\n- [ ] Connection verified during startup\n- [ ] Local setup steps documented",
+    "labels": [
+      "database",
+      "setup",
+      "documentation"
+    ],
+    "milestone": "Milestone 0: Foundations and Tooling",
+    "inserted": true
+  },
+  {
+    "title": "Introduce Migration Tooling",
+    "body": "## Description\nAdd database migration tooling and wire it to the app lifecycle.\n\n## Acceptance Criteria\n- [ ] Migration tool runs automatically on start\n- [ ] Errors surface clearly on migration failure\n- [ ] Usage documented",
+    "labels": [
+      "database",
+      "migrations",
+      "setup"
+    ],
+    "milestone": "Milestone 0: Foundations and Tooling",
+    "inserted": true
+  },
+  {
+    "title": "Create Empty Baseline Migration",
+    "body": "## Description\nCreate an initial baseline migration to anchor future schema changes.\n\n## Acceptance Criteria\n- [ ] Baseline migration applies on clean DB\n- [ ] No tables beyond bookkeeping are created\n- [ ] Baseline documented",
+    "labels": [
+      "database",
+      "migrations"
+    ],
+    "milestone": "Milestone 0: Foundations and Tooling",
+    "inserted": true
+  },
+  {
+    "title": "Document Definition of Done",
+    "body": "## Description\nDefine a checklist for when a task is considered done.\n\n## Acceptance Criteria\n- [ ] DoD checklist published in docs\n- [ ] Includes testing, review, and docs requirements\n- [ ] Referenced by contribution guidelines",
+    "labels": [
+      "process",
+      "documentation",
+      "governance"
+    ],
+    "milestone": "Milestone 0: Foundations and Tooling",
+    "inserted": true
+  },
+  {
+    "title": "Define Branching and Release Strategy",
+    "body": "## Description\nDocument branching model, tagging, and release flow.\n\n## Acceptance Criteria\n- [ ] Branch naming and PR rules documented\n- [ ] Tagging/versioning approach described\n- [ ] Release flow outlined",
+    "labels": [
+      "process",
+      "documentation",
+      "governance"
+    ],
+    "milestone": "Milestone 0: Foundations and Tooling",
+    "inserted": true
+  },
+  {
+    "title": "Create User Domain Entity",
+    "body": "## Description\nDefine a domain entity for users with required fields.\n\n## Acceptance Criteria\n- [ ] Entity includes name, email, password hash\n- [ ] Invariants validated (email required)\n- [ ] Unit tests cover invariants",
+    "labels": [
+      "domain",
+      "security"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "Define Role Enumeration",
+    "body": "## Description\nAdd a role enumeration for Technical Admin, Employee, and HR.\n\n## Acceptance Criteria\n- [ ] Roles defined and documented\n- [ ] Unit tests validate mapping/usage\n- [ ] Role constraints clarified",
+    "labels": [
+      "domain",
+      "security",
+      "documentation"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "User Table Migration with Constraints",
+    "body": "## Description\nCreate migration for user table with unique email constraint.\n\n## Acceptance Criteria\n- [ ] Table created with required columns\n- [ ] Unique constraint on email present\n- [ ] Migration applies cleanly",
+    "labels": [
+      "database",
+      "migrations",
+      "persistence"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "User Repository Interface",
+    "body": "## Description\nProvide persistence access for users with basic CRUD operations.\n\n## Acceptance Criteria\n- [ ] Create, find-by-id, find-by-email, update available\n- [ ] Duplicate email behavior defined\n- [ ] Repository tests added",
+    "labels": [
+      "persistence",
+      "database",
+      "testing"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "Password Hashing Utility",
+    "body": "## Description\nIntroduce a utility to hash and verify passwords securely.\n\n## Acceptance Criteria\n- [ ] Hashing produces non-reversible values\n- [ ] Verification matches only correct passwords\n- [ ] Tests cover typical cases",
+    "labels": [
+      "security",
+      "quality",
+      "testing"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "Login View and Form",
+    "body": "## Description\nCreate a login UI with email and password inputs.\n\n## Acceptance Criteria\n- [ ] Form submits credentials to backend\n- [ ] Invalid attempts show generic error\n- [ ] Basic accessibility verified",
+    "labels": [
+      "ui",
+      "security",
+      "usability"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "Session Creation on Successful Login",
+    "body": "## Description\nEstablish a server-side session upon successful authentication.\n\n## Acceptance Criteria\n- [ ] Valid login creates session\n- [ ] Session persists across navigation\n- [ ] Session cookie flags configured",
+    "labels": [
+      "security",
+      "backend"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "Logout Endpoint and Action",
+    "body": "## Description\nAdd a logout action that invalidates the user session.\n\n## Acceptance Criteria\n- [ ] Session invalidated on logout\n- [ ] User redirected to login page\n- [ ] No protected content accessible post-logout",
+    "labels": [
+      "security",
+      "backend",
+      "ui"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "Enforce Must-Change-Password Flag",
+    "body": "## Description\nRequire users with the flag to change password on next login.\n\n## Acceptance Criteria\n- [ ] Users flagged must change password before proceeding\n- [ ] Non-compliance blocks access to main views\n- [ ] Flow covered by tests",
+    "labels": [
+      "security",
+      "backend",
+      "ui"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "Admin: Create User Form",
+    "body": "## Description\nProvide an admin UI to create a new user with role selection.\n\n## Acceptance Criteria\n- [ ] Admin can input name, email, role\n- [ ] Validation for required fields and unique email\n- [ ] Success feedback shown",
+    "labels": [
+      "ui",
+      "admin",
+      "usability"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "Admin: Set Initial Password",
+    "body": "## Description\nAllow admin to set an initial password for a new user and flag for change.\n\n## Acceptance Criteria\n- [ ] Initial password entry available\n- [ ] Must-change flag set automatically\n- [ ] Confirmation displayed",
+    "labels": [
+      "admin",
+      "security",
+      "ui"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "Admin: Reset Password for Existing User",
+    "body": "## Description\nProvide admin action to reset a user\u00e2\u20ac\u2122s password and set must-change flag.\n\n## Acceptance Criteria\n- [ ] Admin can trigger reset\n- [ ] Must-change flag enforced\n- [ ] Action restricted to admin role",
+    "labels": [
+      "admin",
+      "security"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "Route Guards by Role",
+    "body": "## Description\nBlock navigation to views not allowed for the current role.\n\n## Acceptance Criteria\n- [ ] Unauthorized routes are inaccessible\n- [ ] Direct URL entry is intercepted\n- [ ] Friendly redirect shown",
+    "labels": [
+      "security",
+      "authorization",
+      "ui"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "Endpoint Guards by Role",
+    "body": "## Description\nRestrict server endpoints by role permissions.\n\n## Acceptance Criteria\n- [ ] Unauthorized calls receive correct status\n- [ ] Allowed roles can access successfully\n- [ ] Rules documented",
+    "labels": [
+      "security",
+      "authorization",
+      "backend"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "User List View for Admins",
+    "body": "## Description\nProvide a simple admin view listing all users.\n\n## Acceptance Criteria\n- [ ] Table lists users with basic fields\n- [ ] Pagination or basic loading works\n- [ ] Access restricted to admins",
+    "labels": [
+      "ui",
+      "admin",
+      "usability"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "Edit User Details (Admin)",
+    "body": "## Description\nAllow admins to edit an existing user\u00e2\u20ac\u2122s name, role, and active status if applicable.\n\n## Acceptance Criteria\n- [ ] Edit form pre-populates fields\n- [ ] Changes persist on save\n- [ ] Validation errors shown",
+    "labels": [
+      "ui",
+      "admin"
+    ],
+    "milestone": "Milestone 1: Identity & Access",
+    "inserted": true
+  },
+  {
+    "title": "Customer Domain Entity",
+    "body": "## Description\nDefine a Customer entity with required fields.\n\n## Acceptance Criteria\n- [ ] Entity includes name\n- [ ] Non-empty name validated\n- [ ] Unit tests added",
+    "labels": [
+      "domain",
+      "master-data",
+      "testing"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "Project Domain Entity with Active Flag",
+    "body": "## Description\nDefine a Project entity linked to Customer with an active flag.\n\n## Acceptance Criteria\n- [ ] Entity includes name, customer link, active\n- [ ] Non-empty name validated\n- [ ] Unit tests added",
+    "labels": [
+      "domain",
+      "master-data",
+      "testing"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "Customer Table Migration",
+    "body": "## Description\nCreate migration for customers table with basic constraints.\n\n## Acceptance Criteria\n- [ ] Table created with required columns\n- [ ] Unique constraint decisions documented\n- [ ] Migration applies cleanly",
+    "labels": [
+      "database",
+      "migrations"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "Project Table Migration with FK",
+    "body": "## Description\nCreate migration for projects table with foreign key to customers.\n\n## Acceptance Criteria\n- [ ] Table created with FK to customers\n- [ ] Active flag defaults defined\n- [ ] Migration applies cleanly",
+    "labels": [
+      "database",
+      "migrations"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "Customer Repository",
+    "body": "## Description\nAdd persistence repository for Customer.\n\n## Acceptance Criteria\n- [ ] CRUD operations available\n- [ ] Repository tests added\n- [ ] Error behavior defined",
+    "labels": [
+      "persistence",
+      "database",
+      "testing"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "Project Repository with Active Filters",
+    "body": "## Description\nAdd persistence repository for Project including active-only queries.\n\n## Acceptance Criteria\n- [ ] CRUD operations available\n- [ ] Query for active projects provided\n- [ ] Repository tests added",
+    "labels": [
+      "persistence",
+      "database",
+      "testing"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "Use Case: Create Customer",
+    "body": "## Description\nAdd application service to create a new customer with validation.\n\n## Acceptance Criteria\n- [ ] Service creates customer on valid input\n- [ ] Validation errors are returned\n- [ ] Covered by unit tests",
+    "labels": [
+      "application",
+      "master-data",
+      "testing"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "Use Case: Update Customer",
+    "body": "## Description\nAdd application service to update customer details.\n\n## Acceptance Criteria\n- [ ] Name updates persist\n- [ ] Validation errors returned\n- [ ] Tests cover behavior",
+    "labels": [
+      "application",
+      "master-data",
+      "testing"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "Use Case: Delete Customer",
+    "body": "## Description\nAdd application service to delete a customer with safety checks.\n\n## Acceptance Criteria\n- [ ] Customer can be deleted when allowed\n- [ ] Meaningful error if not allowed\n- [ ] Tests cover outcomes",
+    "labels": [
+      "application",
+      "master-data",
+      "testing"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "Use Case: Create Project",
+    "body": "## Description\nAdd application service to create a new project assigned to a customer.\n\n## Acceptance Criteria\n- [ ] Project persists with active=true by default\n- [ ] Validation errors returned\n- [ ] Tests cover behavior",
+    "labels": [
+      "application",
+      "master-data",
+      "testing"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "Use Case: Update Project",
+    "body": "## Description\nAdd application service to update project fields excluding archival behavior.\n\n## Acceptance Criteria\n- [ ] Name and customer updates persist\n- [ ] Validation errors returned\n- [ ] Tests cover behavior",
+    "labels": [
+      "application",
+      "master-data",
+      "testing"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "Use Case: Toggle Project Active Flag",
+    "body": "## Description\nAdd service to toggle a project\u00e2\u20ac\u2122s active flag.\n\n## Acceptance Criteria\n- [ ] Active state changes persist\n- [ ] Affects selection visibility\n- [ ] Tests verify status change",
+    "labels": [
+      "application",
+      "master-data",
+      "testing"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "HR UI: Customer List",
+    "body": "## Description\nProvide a simple list view of customers for HR.\n\n## Acceptance Criteria\n- [ ] Customers displayed with name\n- [ ] Create and edit navigation available\n- [ ] Access limited to HR",
+    "labels": [
+      "ui",
+      "master-data",
+      "usability"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "HR UI: Customer Form",
+    "body": "## Description\nProvide create/edit form for customer.\n\n## Acceptance Criteria\n- [ ] Form validates required fields\n- [ ] Save persists changes\n- [ ] Errors displayed clearly",
+    "labels": [
+      "ui",
+      "master-data",
+      "usability"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "HR UI: Project List with Active Indicator",
+    "body": "## Description\nProvide a list view for projects showing active status.\n\n## Acceptance Criteria\n- [ ] Projects listed with active indicator\n- [ ] Create and edit navigation available\n- [ ] Access limited to HR",
+    "labels": [
+      "ui",
+      "master-data",
+      "usability"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "HR UI: Project Form with Active Toggle",
+    "body": "## Description\nProvide create/edit form for projects including active toggle.\n\n## Acceptance Criteria\n- [ ] Can set name, customer, and active state\n- [ ] Validation errors displayed\n- [ ] Save persists changes",
+    "labels": [
+      "ui",
+      "master-data",
+      "usability"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "Hide Inactive Projects in Selectors",
+    "body": "## Description\nEnsure project pickers for employees only display active projects.\n\n## Acceptance Criteria\n- [ ] Inactive projects are excluded from pickers\n- [ ] Existing entries referencing inactive remain visible\n- [ ] Behavior documented",
+    "labels": [
+      "ui",
+      "authorization",
+      "master-data"
+    ],
+    "milestone": "Milestone 2: Master Data (Customers & Projects)",
+    "inserted": true
+  },
+  {
+    "title": "TimeEntry Domain Entity",
+    "body": "## Description\nDefine a domain entity for time entries with required fields.\n\n## Acceptance Criteria\n- [ ] Fields include employee, day, start, end, project, note\n- [ ] Basic invariants added\n- [ ] Unit tests included",
+    "labels": [
+      "domain",
+      "time-tracking",
+      "testing"
+    ],
+    "milestone": "Milestone 3: Time Tracking Basics",
+    "inserted": true
+  },
+  {
+    "title": "TimeEntry Table Migration",
+    "body": "## Description\nCreate migration for time entries with necessary indexes and FKs.\n\n## Acceptance Criteria\n- [ ] Table created with FKs to user and project\n- [ ] Indexes for employee+day queries\n- [ ] Migration applies cleanly",
+    "labels": [
+      "database",
+      "migrations"
+    ],
+    "milestone": "Milestone 3: Time Tracking Basics",
+    "inserted": true
+  },
+  {
+    "title": "TimeEntry Repository",
+    "body": "## Description\nAdd repository for time entries with employee/day scoped queries.\n\n## Acceptance Criteria\n- [ ] CRUD operations available\n- [ ] Query by employee and day implemented\n- [ ] Tests cover typical usage",
+    "labels": [
+      "persistence",
+      "database",
+      "testing"
+    ],
+    "milestone": "Milestone 3: Time Tracking Basics",
+    "inserted": true
+  },
+  {
+    "title": "Use Case: Create Time Entry (Owner Only)",
+    "body": "## Description\nAdd application service to create a time entry for the authenticated employee.\n\n## Acceptance Criteria\n- [ ] Owner restriction enforced\n- [ ] Validation errors returned\n- [ ] Tests cover happy/invalid paths",
+    "labels": [
+      "application",
+      "security",
+      "time-tracking"
+    ],
+    "milestone": "Milestone 3: Time Tracking Basics",
+    "inserted": true
+  },
+  {
+    "title": "Use Case: Update Time Entry (Owner Only)",
+    "body": "## Description\nAdd application service to update a time entry belonging to the employee.\n\n## Acceptance Criteria\n- [ ] Owner restriction enforced\n- [ ] Validation errors returned\n- [ ] Tests cover scenarios",
+    "labels": [
+      "application",
+      "security",
+      "time-tracking"
+    ],
+    "milestone": "Milestone 3: Time Tracking Basics",
+    "inserted": true
+  },
+  {
+    "title": "Use Case: Delete Time Entry (Owner Only)",
+    "body": "## Description\nAdd application service to delete a time entry belonging to the employee.\n\n## Acceptance Criteria\n- [ ] Owner restriction enforced\n- [ ] Deletion removes entry\n- [ ] Error on unauthorized access",
+    "labels": [
+      "application",
+      "security",
+      "time-tracking"
+    ],
+    "milestone": "Milestone 3: Time Tracking Basics",
+    "inserted": true
+  },
+  {
+    "title": "Validation: 15-Minute Increments",
+    "body": "## Description\nEnsure start and end times align to 15-minute increments.\n\n## Acceptance Criteria\n- [ ] Non-compliant times rejected\n- [ ] Clear error message returned\n- [ ] Enforced on create/update",
+    "labels": [
+      "validation",
+      "application",
+      "time-tracking"
+    ],
+    "milestone": "Milestone 3: Time Tracking Basics",
+    "inserted": true
+  },
+  {
+    "title": "Validation: End After Start",
+    "body": "## Description\nEnsure end time is strictly greater than start time.\n\n## Acceptance Criteria\n- [ ] Invalid intervals rejected\n- [ ] Clear error message returned\n- [ ] Enforced on create/update",
+    "labels": [
+      "validation",
+      "application",
+      "time-tracking"
+    ],
+    "milestone": "Milestone 3: Time Tracking Basics",
+    "inserted": true
+  },
+  {
+    "title": "Validation: No Cross-Midnight",
+    "body": "## Description\nEnsure a single time entry does not cross midnight.\n\n## Acceptance Criteria\n- [ ] Cross-midnight entries rejected\n- [ ] Clear error message returned\n- [ ] Enforced on create/update",
+    "labels": [
+      "validation",
+      "application",
+      "time-tracking"
+    ],
+    "milestone": "Milestone 3: Time Tracking Basics",
+    "inserted": true
+  },
+  {
+    "title": "Daily Time Entry UI: List",
+    "body": "## Description\nProvide a daily list of the employee\u00e2\u20ac\u2122s time entries.\n\n## Acceptance Criteria\n- [ ] Entries shown for selected day\n- [ ] Empty state guidance shown\n- [ ] Performance acceptable",
+    "labels": [
+      "ui",
+      "time-tracking",
+      "usability"
+    ],
+    "milestone": "Milestone 3: Time Tracking Basics",
+    "inserted": true
+  },
+  {
+    "title": "Daily Time Entry UI: Create/Edit Form",
+    "body": "## Description\nProvide a form to create and edit a time entry with project selection and note.\n\n## Acceptance Criteria\n- [ ] Form validates inputs\n- [ ] Save persists changes\n- [ ] Errors displayed clearly",
+    "labels": [
+      "ui",
+      "time-tracking",
+      "usability"
+    ],
+    "milestone": "Milestone 3: Time Tracking Basics",
+    "inserted": true
+  },
+  {
+    "title": "Daily Time Entry UI: Delete Action",
+    "body": "## Description\nAllow employees to delete their own time entries from the daily view.\n\n## Acceptance Criteria\n- [ ] Delete action available per entry\n- [ ] Confirmation requested\n- [ ] List refreshes after deletion",
+    "labels": [
+      "ui",
+      "time-tracking",
+      "usability"
+    ],
+    "milestone": "Milestone 3: Time Tracking Basics",
+    "inserted": true
+  },
+  {
+    "title": "Validation: No Overlaps per Day",
+    "body": "## Description\nBlock overlapping time entries for the same employee on the same day.\n\n## Acceptance Criteria\n- [ ] Overlaps detected and rejected\n- [ ] Error indicates conflicting interval\n- [ ] Enforced on create/update",
+    "labels": [
+      "validation",
+      "application",
+      "time-tracking"
+    ],
+    "milestone": "Milestone 4: Advanced Time Rules & Overlap Checks",
+    "inserted": true
+  },
+  {
+    "title": "Aggregate Validation Errors",
+    "body": "## Description\nReturn multiple validation errors together to improve UX.\n\n## Acceptance Criteria\n- [ ] Multiple messages returned in one response\n- [ ] UI can render a list of errors\n- [ ] No partial saves on failure",
+    "labels": [
+      "validation",
+      "application",
+      "ux"
+    ],
+    "milestone": "Milestone 4: Advanced Time Rules & Overlap Checks",
+    "inserted": true
+  },
+  {
+    "title": "Improve Validation Messages for UI",
+    "body": "## Description\nStandardize validation messages for clarity and consistency.\n\n## Acceptance Criteria\n- [ ] Messages use consistent phrasing\n- [ ] Field-level mapping provided\n- [ ] Covered by tests or checklist",
+    "labels": [
+      "ux",
+      "validation",
+      "documentation"
+    ],
+    "milestone": "Milestone 4: Advanced Time Rules & Overlap Checks",
+    "inserted": true
+  },
+  {
+    "title": "MonthState Domain Entity",
+    "body": "## Description\nDefine a MonthState entity with state and metadata.\n\n## Acceptance Criteria\n- [ ] Fields include employee, yearMonth, status\n- [ ] Timestamp and actor fields present\n- [ ] Unit tests added",
+    "labels": [
+      "domain",
+      "workflow",
+      "testing"
+    ],
+    "milestone": "Milestone 5: Monthly Workflow",
+    "inserted": true
+  },
+  {
+    "title": "MonthState Table Migration",
+    "body": "## Description\nCreate migration for MonthState with uniqueness per employee and year-month.\n\n## Acceptance Criteria\n- [ ] Unique constraint employee+yearMonth\n- [ ] Required columns present\n- [ ] Migration applies cleanly",
+    "labels": [
+      "database",
+      "migrations"
+    ],
+    "milestone": "Milestone 5: Monthly Workflow",
+    "inserted": true
+  },
+  {
+    "title": "Use Case: Submit Month",
+    "body": "## Description\nAllow an employee to submit their month changing state Open -> Submitted.\n\n## Acceptance Criteria\n- [ ] Only owner can submit\n- [ ] Allowed only from Open\n- [ ] Feedback confirms submit",
+    "labels": [
+      "application",
+      "workflow",
+      "security"
+    ],
+    "milestone": "Milestone 5: Monthly Workflow",
+    "inserted": true
+  },
+  {
+    "title": "Use Case: Approve Month",
+    "body": "## Description\nAllow HR to approve a submitted month changing state Submitted -> Approved.\n\n## Acceptance Criteria\n- [ ] Only HR can approve\n- [ ] Allowed only from Submitted\n- [ ] Feedback confirms approval",
+    "labels": [
+      "application",
+      "workflow",
+      "security"
+    ],
+    "milestone": "Milestone 5: Monthly Workflow",
+    "inserted": true
+  },
+  {
+    "title": "Use Case: Reopen Month",
+    "body": "## Description\nAllow HR to reopen a month to Open from Submitted or Approved.\n\n## Acceptance Criteria\n- [ ] Only HR can reopen\n- [ ] Allowed from Submitted or Approved\n- [ ] Feedback confirms reopen",
+    "labels": [
+      "application",
+      "workflow",
+      "security"
+    ],
+    "milestone": "Milestone 5: Monthly Workflow",
+    "inserted": true
+  },
+  {
+    "title": "Locking: Block Edits When Not Open",
+    "body": "## Description\nPrevent time entry edits when month state is not Open.\n\n## Acceptance Criteria\n- [ ] Create/update/delete blocked when Submitted/Approved\n- [ ] Clear message indicates locked state\n- [ ] Reopen restores editing",
+    "labels": [
+      "application",
+      "workflow",
+      "validation"
+    ],
+    "milestone": "Milestone 5: Monthly Workflow",
+    "inserted": true
+  },
+  {
+    "title": "UI: Month Header with Status",
+    "body": "## Description\nDisplay current month state prominently in the UI header.\n\n## Acceptance Criteria\n- [ ] Shows Open/Submitted/Approved\n- [ ] Updates after transitions\n- [ ] Accessible to screen readers",
+    "labels": [
+      "ui",
+      "workflow",
+      "usability"
+    ],
+    "milestone": "Milestone 5: Monthly Workflow",
+    "inserted": true
+  },
+  {
+    "title": "UI: Employee Action - Submit",
+    "body": "## Description\nShow a Submit button for employees when month is Open.\n\n## Acceptance Criteria\n- [ ] Button visible only when allowed\n- [ ] Confirmation dialog shown\n- [ ] Success/Failure messages displayed",
+    "labels": [
+      "ui",
+      "workflow",
+      "usability"
+    ],
+    "milestone": "Milestone 5: Monthly Workflow",
+    "inserted": true
+  },
+  {
+    "title": "UI: HR Actions - Approve/Reopen",
+    "body": "## Description\nShow Approve and Reopen actions for HR based on state.\n\n## Acceptance Criteria\n- [ ] Approve visible when Submitted\n- [ ] Reopen visible when Submitted or Approved\n- [ ] Success/Failure messages displayed",
+    "labels": [
+      "ui",
+      "workflow",
+      "usability"
+    ],
+    "milestone": "Milestone 5: Monthly Workflow",
+    "inserted": true
+  },
+  {
+    "title": "Guard Routes by Month State",
+    "body": "## Description\nAdd route guards that block editing routes when month is not Open.\n\n## Acceptance Criteria\n- [ ] Editing routes blocked when locked\n- [ ] Direct URL access intercepted\n- [ ] Redirect with explanation",
+    "labels": [
+      "security",
+      "authorization",
+      "navigation"
+    ],
+    "milestone": "Milestone 6: Access Control Hardening & Navigation",
+    "inserted": true
+  },
+  {
+    "title": "Hide Unauthorized UI Actions",
+    "body": "## Description\nConditionally hide or disable UI actions not permitted for the current user.\n\n## Acceptance Criteria\n- [ ] Unauthorized buttons/links hidden or disabled\n- [ ] Tooltips explain disabled state\n- [ ] Server still enforces authorization",
+    "labels": [
+      "ui",
+      "authorization",
+      "usability"
+    ],
+    "milestone": "Milestone 6: Access Control Hardening & Navigation",
+    "inserted": true
+  },
+  {
+    "title": "Session Expiry Redirect to Login",
+    "body": "## Description\nRedirect users to login when session expires.\n\n## Acceptance Criteria\n- [ ] Expired session triggers redirect\n- [ ] No sensitive data leaked\n- [ ] Behavior verified manually",
+    "labels": [
+      "security",
+      "session",
+      "ux"
+    ],
+    "milestone": "Milestone 6: Access Control Hardening & Navigation",
+    "inserted": true
+  },
+  {
+    "title": "Post-Login Return Navigation",
+    "body": "## Description\nReturn user to intended destination after successful login.\n\n## Acceptance Criteria\n- [ ] Prior target preserved across login\n- [ ] Works after session expiry\n- [ ] Documented for testers",
+    "labels": [
+      "ux",
+      "navigation",
+      "security"
+    ],
+    "milestone": "Milestone 6: Access Control Hardening & Navigation",
+    "inserted": true
+  },
+  {
+    "title": "Empty States for Lists",
+    "body": "## Description\nAdd helpful empty-state content to list views.\n\n## Acceptance Criteria\n- [ ] Empty messages guide next steps\n- [ ] Consistent design across views\n- [ ] Copy reviewed",
+    "labels": [
+      "ui",
+      "ux",
+      "usability"
+    ],
+    "milestone": "Milestone 7: UX Polish and Non-Functional",
+    "inserted": true
+  },
+  {
+    "title": "Consistent Error Toasts",
+    "body": "## Description\nStandardize error toast style and placement.\n\n## Acceptance Criteria\n- [ ] Errors appear in consistent location\n- [ ] Copy is non-technical and helpful\n- [ ] Works across major flows",
+    "labels": [
+      "ui",
+      "ux",
+      "usability"
+    ],
+    "milestone": "Milestone 7: UX Polish and Non-Functional",
+    "inserted": true
+  },
+  {
+    "title": "Index: Users Email Unique",
+    "body": "## Description\nEnsure unique index/constraint on users email with documentation.\n\n## Acceptance Criteria\n- [ ] Unique index exists\n- [ ] Conflicts return clear errors\n- [ ] Documented rationale",
+    "labels": [
+      "performance",
+      "database",
+      "optimization"
+    ],
+    "milestone": "Milestone 7: UX Polish and Non-Functional",
+    "inserted": true
+  },
+  {
+    "title": "Index: TimeEntry by Employee and Day",
+    "body": "## Description\nAdd index to speed lookups of time entries by employee and day.\n\n## Acceptance Criteria\n- [ ] Index created and used\n- [ ] Reduced query time observed\n- [ ] Notes added to docs",
+    "labels": [
+      "performance",
+      "database",
+      "optimization"
+    ],
+    "milestone": "Milestone 7: UX Polish and Non-Functional",
+    "inserted": true
+  },
+  {
+    "title": "Audit: Record Timestamp on Month Transitions",
+    "body": "## Description\nRecord created/updated timestamps for MonthState transitions.\n\n## Acceptance Criteria\n- [ ] Timestamp stored on every transition\n- [ ] Times displayed where relevant\n- [ ] Covered by tests",
+    "labels": [
+      "auditing",
+      "workflow",
+      "backend"
+    ],
+    "milestone": "Milestone 7: UX Polish and Non-Functional",
+    "inserted": true
+  },
+  {
+    "title": "Audit: Record Actor on Month Transitions",
+    "body": "## Description\nRecord the actor responsible for MonthState transitions.\n\n## Acceptance Criteria\n- [ ] Actor captured reliably\n- [ ] Actor shown in UI context\n- [ ] Behavior documented",
+    "labels": [
+      "auditing",
+      "workflow",
+      "backend"
+    ],
+    "milestone": "Milestone 7: UX Polish and Non-Functional",
+    "inserted": true
+  },
+  {
+    "title": "Security Headers Configuration",
+    "body": "## Description\nConfigure standard security headers at the application level.\n\n## Acceptance Criteria\n- [ ] Common headers set appropriately\n- [ ] No regressions in UI behavior\n- [ ] Settings documented",
+    "labels": [
+      "security",
+      "hardening",
+      "quality"
+    ],
+    "milestone": "Milestone 7: UX Polish and Non-Functional",
+    "inserted": true
+  },
+  {
+    "title": "CSRF Protection Verification",
+    "body": "## Description\nVerify CSRF protection is enabled for state-changing operations.\n\n## Acceptance Criteria\n- [ ] CSRF tokens present on forms\n- [ ] Invalid/missing tokens rejected\n- [ ] Tests or manual checklist provided",
+    "labels": [
+      "security",
+      "hardening",
+      "quality"
+    ],
+    "milestone": "Milestone 7: UX Polish and Non-Functional",
+    "inserted": true
+  },
+  {
+    "title": "E2E: Authentication Happy Path",
+    "body": "## Description\nAdd an end-to-end test for login and logout.\n\n## Acceptance Criteria\n- [ ] Test logs in with valid user\n- [ ] Navigates to a protected view\n- [ ] Logs out successfully",
+    "labels": [
+      "testing",
+      "e2e",
+      "quality"
+    ],
+    "milestone": "Milestone 8: Stabilization and Release 1.0.0",
+    "inserted": true
+  },
+  {
+    "title": "E2E: Admin Creates and Edits User",
+    "body": "## Description\nAdd an end-to-end test where admin creates and edits a user.\n\n## Acceptance Criteria\n- [ ] User creation succeeds\n- [ ] User edit persists changes\n- [ ] Assertions verify UI updates",
+    "labels": [
+      "testing",
+      "e2e",
+      "quality"
+    ],
+    "milestone": "Milestone 8: Stabilization and Release 1.0.0",
+    "inserted": true
+  },
+  {
+    "title": "E2E: HR Manages Customers",
+    "body": "## Description\nAdd E2E test for HR creating and editing a customer.\n\n## Acceptance Criteria\n- [ ] Customer creation succeeds\n- [ ] Customer edit persists\n- [ ] UI reflects changes",
+    "labels": [
+      "testing",
+      "e2e",
+      "quality"
+    ],
+    "milestone": "Milestone 8: Stabilization and Release 1.0.0",
+    "inserted": true
+  },
+  {
+    "title": "E2E: HR Manages Projects",
+    "body": "## Description\nAdd E2E test for HR creating and editing a project including active toggle.\n\n## Acceptance Criteria\n- [ ] Project creation succeeds\n- [ ] Toggle active updates selector visibility\n- [ ] UI assertions pass",
+    "labels": [
+      "testing",
+      "e2e",
+      "quality"
+    ],
+    "milestone": "Milestone 8: Stabilization and Release 1.0.0",
+    "inserted": true
+  },
+  {
+    "title": "E2E: Employee Time Entry CRUD",
+    "body": "## Description\nAdd E2E test for creating, editing, and deleting time entries.\n\n## Acceptance Criteria\n- [ ] Create/edit/delete succeed\n- [ ] Validation messages appear on invalid data\n- [ ] Day list updates accordingly",
+    "labels": [
+      "testing",
+      "e2e",
+      "quality"
+    ],
+    "milestone": "Milestone 8: Stabilization and Release 1.0.0",
+    "inserted": true
+  },
+  {
+    "title": "E2E: Submit, Approve, Reopen Flow",
+    "body": "## Description\nAdd E2E test covering month submission by employee, approval by HR, and reopen.\n\n## Acceptance Criteria\n- [ ] Submit transitions to Submitted\n- [ ] Approve transitions to Approved\n- [ ] Reopen returns to Open",
+    "labels": [
+      "testing",
+      "e2e",
+      "quality"
+    ],
+    "milestone": "Milestone 8: Stabilization and Release 1.0.0",
+    "inserted": true
+  },
+  {
+    "title": "Migration Dry Run on Clean DB",
+    "body": "## Description\nExecute a dry run of all migrations on a clean database instance.\n\n## Acceptance Criteria\n- [ ] Migrations apply without errors\n- [ ] Logs captured for review\n- [ ] Steps documented",
+    "labels": [
+      "migrations",
+      "database",
+      "release"
+    ],
+    "milestone": "Milestone 8: Stabilization and Release 1.0.0",
+    "inserted": true
+  },
+  {
+    "title": "Seed Minimal Roles and Admin User",
+    "body": "## Description\nProvide a minimal seed to create roles and a default admin account.\n\n## Acceptance Criteria\n- [ ] Roles created\n- [ ] Admin user available for testing\n- [ ] Credentials handling documented",
+    "labels": [
+      "database",
+      "release",
+      "setup"
+    ],
+    "milestone": "Milestone 8: Stabilization and Release 1.0.0",
+    "inserted": true
+  },
+  {
+    "title": "Seed One Customer and Project",
+    "body": "## Description\nSeed a single customer and active project for smoke testing.\n\n## Acceptance Criteria\n- [ ] Customer and project created\n- [ ] Appears in UI selectors\n- [ ] Steps documented",
+    "labels": [
+      "database",
+      "release",
+      "setup"
+    ],
+    "milestone": "Milestone 8: Stabilization and Release 1.0.0",
+    "inserted": true
+  },
+  {
+    "title": "Prepare Release Notes Draft",
+    "body": "## Description\nWrite release notes summarizing features and limitations.\n\n## Acceptance Criteria\n- [ ] Features listed by milestone\n- [ ] Known limitations documented\n- [ ] Reviewed by team",
+    "labels": [
+      "release",
+      "documentation",
+      "ops"
+    ],
+    "milestone": "Milestone 8: Stabilization and Release 1.0.0",
+    "inserted": true
+  },
+  {
+    "title": "Create Deployment Runbook",
+    "body": "## Description\nPrepare a step-by-step deployment guide including verification and rollback.\n\n## Acceptance Criteria\n- [ ] Deploy and verify steps documented\n- [ ] Rollback procedure included\n- [ ] Contacts and prerequisites listed",
+    "labels": [
+      "release",
+      "documentation",
+      "ops"
+    ],
+    "milestone": "Milestone 8: Stabilization and Release 1.0.0",
+    "inserted": true
+  },
+  {
+    "title": "Tag Version 1.0.0",
+    "body": "## Description\nCreate a version tag for the 1.0.0 release.\n\n## Acceptance Criteria\n- [ ] Tag created in VCS\n- [ ] CI artifacts produced\n- [ ] Tag referenced in notes",
+    "labels": [
+      "release",
+      "devops"
+    ],
+    "milestone": "Milestone 8: Stabilization and Release 1.0.0",
+    "inserted": true
+  },
+  {
+    "title": "Execute Production Deployment 1.0.0",
+    "body": "## Description\nDeploy version 1.0.0 following the runbook and record results.\n\n## Acceptance Criteria\n- [ ] Deployment completes successfully\n- [ ] Health checks pass\n- [ ] Smoke tests captured",
+    "labels": [
+      "release",
+      "devops",
+      "deployment"
+    ],
+    "milestone": "Milestone 8: Stabilization and Release 1.0.0",
+    "inserted": true
+  }
+]
